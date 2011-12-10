@@ -16,15 +16,14 @@
 
 #pragma mark -
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
+- (void)applicationDidBecomeActive:(UIApplication *)application {
     [VUiTunesStoreItem fetchItemWithId:@"479943969" toContainer:self.masterViewController];
     return;
     
     UIPasteboard* pasteboard = [UIPasteboard generalPasteboard];
     [VUiTunesStoreItem fetchItemFromPasteboard:pasteboard toContainer:self.masterViewController];
     
-    // 5. Provide details, link to App Store and App Shopper as well as Sharing options in detail
+    // TODO: Provide details, link to App Store and App Shopper as well as Sharing options in detail
 }
 
 - (VUMasterViewController*)masterViewController {

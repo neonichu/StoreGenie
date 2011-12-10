@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#import "VUiTunesStoreItem.h"
+
 @interface VUDetailViewController : UIViewController
 
-@property (strong, nonatomic) id detailItem;
-
-@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (strong, nonatomic) IBOutlet UILabel* detailDescriptionLabel;
+@property (strong, nonatomic) VUiTunesStoreItem* detailItem;
 
 @end

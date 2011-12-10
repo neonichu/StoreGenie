@@ -1,0 +1,3 @@
+[submodule "EGOImageLoading"]
+	path = EGOImageLoading
+	url = https://github.com/enormego/EGOImageLoading.git

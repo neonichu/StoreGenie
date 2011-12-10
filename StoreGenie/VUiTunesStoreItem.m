@@ -24,6 +24,7 @@ static NSString* kViewUrl           = @"trackViewUrl";
 
 @interface VUiTunesStoreItem ()
 
+@property (nonatomic, readonly) NSDictionary* firstResult;
 @property (nonatomic, strong) id storeData;
 
 @end
@@ -32,11 +33,12 @@ static NSString* kViewUrl           = @"trackViewUrl";
 
 @implementation VUiTunesStoreItem
 
-@dynamic artworkSmall;
+@dynamic artworkSmallURL;
+@dynamic firstResult;
 @dynamic itemId;
 @dynamic price;
 @dynamic title;
-@dynamic viewUrl;
+@dynamic viewURL;
 
 @synthesize kind;
 @synthesize storeData;
@@ -101,8 +103,30 @@ static NSString* kViewUrl           = @"trackViewUrl";
     return self;
 }
 
+#pragma mark -
+
+-(NSDictionary*)firstResult {
+    return [[storeData objectForKey:kResults] objectAtIndex:0];
+}
+
+-(NSURL*)artworkSmallURL {
+    return [NSURL URLWithString:[self.firstResult objectForKey:kArtworkUrlSmall] ];
+}
+
 -(NSString*)itemId {
-    return [[[storeData objectForKey:kResults] objectAtIndex:0] objectForKey:kItemId];
+    return [self.firstResult objectForKey:kItemId];
+}
+
+-(NSString*)price {
+    return [self.firstResult objectForKey:kPrice];
+}
+
+-(NSString*)title {
+    return [self.firstResult objectForKey:kTitle];
+}
+
+-(NSURL*)viewURL {
+    return [NSURL URLWithString:[self.firstResult objectForKey:kViewUrl]];
 }
 
 @end

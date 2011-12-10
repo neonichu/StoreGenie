@@ -27,13 +27,12 @@ typedef enum {
 
 @interface VUiTunesStoreItem : NSObject
 
-@property (nonatomic, readonly) UIImage* artworkSmall;
-@property (nonatomic, readonly) VUItemKind kind;
-
+@property (nonatomic, readonly) NSURL* artworkSmallURL;
 @property (nonatomic, readonly) NSString* itemId;
+@property (nonatomic, readonly) VUItemKind kind;
 @property (nonatomic, readonly) NSString* price;
 @property (nonatomic, readonly) NSString* title;
-@property (nonatomic, readonly) NSString* viewUrl;
+@property (nonatomic, readonly) NSURL* viewURL;
 
 +(void)fetchItemFromPasteboard:(UIPasteboard*)pasteboard toContainer:(id<VUiTunesStoreItemContainer>)container;
 +(void)fetchItemWithId:(NSString*)itemId toContainer:(id<VUiTunesStoreItemContainer>)container;

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A2F53AE1493D830007CE851 /* EGOImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F53AD1493D830007CE851 /* EGOImageView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8A2F53B31493D84C007CE851 /* EGOImageLoadConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F53B01493D84C007CE851 /* EGOImageLoadConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8A2F53B41493D84C007CE851 /* EGOImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F53B21493D84C007CE851 /* EGOImageLoader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8A2F53BB1493DA75007CE851 /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F53BA1493DA75007CE851 /* EGOCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8A2F53BE1493DC34007CE851 /* ThirdPartyLicenses.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8A2F53BD1493DC34007CE851 /* ThirdPartyLicenses.txt */; };
 		8ACF996E149176B1009815CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACF996D149176B1009815CB /* UIKit.framework */; };
 		8ACF9970149176B1009815CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACF996F149176B1009815CB /* Foundation.framework */; };
 		8ACF9972149176B1009815CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACF9971149176B1009815CB /* CoreGraphics.framework */; };
@@ -18,9 +23,19 @@
 		8ACF99981491792B009815CB /* libDTWebArchive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACF99971491792B009815CB /* libDTWebArchive.a */; };
 		8ADE4F80149361550017FC07 /* VUiTunesStoreItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE4F7F149361550017FC07 /* VUiTunesStoreItem.m */; };
 		8ADE4F841493692E0017FC07 /* NSError+StoreGenie.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE4F831493692E0017FC07 /* NSError+StoreGenie.m */; };
+		8ADE4F8B1493CEAA0017FC07 /* VUiTunesStoreItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE4F8A1493CEAA0017FC07 /* VUiTunesStoreItemCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A2F53AC1493D830007CE851 /* EGOImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EGOImageView.h; path = EGOImageLoading/EGOImageView/EGOImageView.h; sourceTree = SOURCE_ROOT; };
+		8A2F53AD1493D830007CE851 /* EGOImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EGOImageView.m; path = EGOImageLoading/EGOImageView/EGOImageView.m; sourceTree = SOURCE_ROOT; };
+		8A2F53AF1493D84C007CE851 /* EGOImageLoadConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EGOImageLoadConnection.h; path = EGOImageLoading/EGOImageLoader/EGOImageLoadConnection.h; sourceTree = SOURCE_ROOT; };
+		8A2F53B01493D84C007CE851 /* EGOImageLoadConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EGOImageLoadConnection.m; path = EGOImageLoading/EGOImageLoader/EGOImageLoadConnection.m; sourceTree = SOURCE_ROOT; };
+		8A2F53B11493D84C007CE851 /* EGOImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EGOImageLoader.h; path = EGOImageLoading/EGOImageLoader/EGOImageLoader.h; sourceTree = SOURCE_ROOT; };
+		8A2F53B21493D84C007CE851 /* EGOImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EGOImageLoader.m; path = EGOImageLoading/EGOImageLoader/EGOImageLoader.m; sourceTree = SOURCE_ROOT; };
+		8A2F53B91493DA75007CE851 /* EGOCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EGOCache.h; path = EGOImageLoading/EGOCache/EGOCache.h; sourceTree = SOURCE_ROOT; };
+		8A2F53BA1493DA75007CE851 /* EGOCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EGOCache.m; path = EGOImageLoading/EGOCache/EGOCache.m; sourceTree = SOURCE_ROOT; };
+		8A2F53BD1493DC34007CE851 /* ThirdPartyLicenses.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ThirdPartyLicenses.txt; sourceTree = "<group>"; };
 		8ACF9969149176B1009815CB /* StoreGenie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreGenie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ACF996D149176B1009815CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8ACF996F149176B1009815CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -43,6 +58,8 @@
 		8ADE4F7F149361550017FC07 /* VUiTunesStoreItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VUiTunesStoreItem.m; sourceTree = "<group>"; };
 		8ADE4F821493692E0017FC07 /* NSError+StoreGenie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+StoreGenie.h"; sourceTree = "<group>"; };
 		8ADE4F831493692E0017FC07 /* NSError+StoreGenie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+StoreGenie.m"; sourceTree = "<group>"; };
+		8ADE4F891493CEAA0017FC07 /* VUiTunesStoreItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VUiTunesStoreItemCell.h; sourceTree = "<group>"; };
+		8ADE4F8A1493CEAA0017FC07 /* VUiTunesStoreItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VUiTunesStoreItemCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +77,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A2F53AA1493D80B007CE851 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				8A2F53BD1493DC34007CE851 /* ThirdPartyLicenses.txt */,
+				8A2F53BC1493DC05007CE851 /* EGOImageLoading */,
+			);
+			name = "Third Party";
+			sourceTree = "<group>";
+		};
+		8A2F53BC1493DC05007CE851 /* EGOImageLoading */ = {
+			isa = PBXGroup;
+			children = (
+				8A2F53B91493DA75007CE851 /* EGOCache.h */,
+				8A2F53BA1493DA75007CE851 /* EGOCache.m */,
+				8A2F53AF1493D84C007CE851 /* EGOImageLoadConnection.h */,
+				8A2F53B01493D84C007CE851 /* EGOImageLoadConnection.m */,
+				8A2F53B11493D84C007CE851 /* EGOImageLoader.h */,
+				8A2F53B21493D84C007CE851 /* EGOImageLoader.m */,
+				8A2F53AC1493D830007CE851 /* EGOImageView.h */,
+				8A2F53AD1493D830007CE851 /* EGOImageView.m */,
+			);
+			name = EGOImageLoading;
+			sourceTree = "<group>";
+		};
 		8ACF995E149176B0009815CB = {
 			isa = PBXGroup;
 			children = (
@@ -100,9 +141,12 @@
 				8ACF9986149176B1009815CB /* VUDetailViewController.m */,
 				8ADE4F7E149361550017FC07 /* VUiTunesStoreItem.h */,
 				8ADE4F7F149361550017FC07 /* VUiTunesStoreItem.m */,
+				8ADE4F891493CEAA0017FC07 /* VUiTunesStoreItemCell.h */,
+				8ADE4F8A1493CEAA0017FC07 /* VUiTunesStoreItemCell.m */,
 				8ACF9982149176B1009815CB /* VUMasterViewController.h */,
 				8ACF9983149176B1009815CB /* VUMasterViewController.m */,
 				8ACF9974149176B1009815CB /* Supporting Files */,
+				8A2F53AA1493D80B007CE851 /* Third Party */,
 			);
 			path = StoreGenie;
 			sourceTree = "<group>";
@@ -180,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ACF9981149176B1009815CB /* MainStoryboard.storyboard in Resources */,
+				8A2F53BE1493DC34007CE851 /* ThirdPartyLicenses.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +241,11 @@
 				8ACF9987149176B1009815CB /* VUDetailViewController.m in Sources */,
 				8ADE4F80149361550017FC07 /* VUiTunesStoreItem.m in Sources */,
 				8ADE4F841493692E0017FC07 /* NSError+StoreGenie.m in Sources */,
+				8ADE4F8B1493CEAA0017FC07 /* VUiTunesStoreItemCell.m in Sources */,
+				8A2F53AE1493D830007CE851 /* EGOImageView.m in Sources */,
+				8A2F53B31493D84C007CE851 /* EGOImageLoadConnection.m in Sources */,
+				8A2F53B41493D84C007CE851 /* EGOImageLoader.m in Sources */,
+				8A2F53BB1493DA75007CE851 /* EGOCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
