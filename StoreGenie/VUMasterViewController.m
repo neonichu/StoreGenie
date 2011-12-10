@@ -3,13 +3,25 @@
 //  StoreGenie
 //
 //  Created by Boris Bügling on 08.12.11.
-//  Copyright (c) 2011 Extessy AG. All rights reserved.
+//  Copyright (c) 2011 Crocodil.us. All rights reserved.
 //
 
 #import "VUMasterViewController.h"
 
+@interface VUMasterViewController ()
+
+// TODO: persist store items
+@property (nonatomic, strong) NSMutableArray* storeItems;
+
+@end
+
+#pragma mark -
+
 @implementation VUMasterViewController
 
+@synthesize storeItems;
+
+#pragma mark -
 
 - (void)awakeFromNib
 {
@@ -100,5 +112,16 @@
     return YES;
 }
 */
+
+#pragma mark -
+#pragma mark VUiTunesStoreItemContainer delegate methods
+
+-(void)addStoreItem:(VUiTunesStoreItem *)storeItem {
+    NSLog(@"Loaded item: %@", storeItem);
+}
+
+-(void)failedToAddStoreItemWithId:(NSString *)itemId error:(NSError *)error {
+    NSLog(@"Failed to load item '%@': %@", itemId, error);
+}
 
 @end

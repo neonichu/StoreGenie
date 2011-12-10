@@ -10,12 +10,14 @@
 		8ACF996E149176B1009815CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACF996D149176B1009815CB /* UIKit.framework */; };
 		8ACF9970149176B1009815CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACF996F149176B1009815CB /* Foundation.framework */; };
 		8ACF9972149176B1009815CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACF9971149176B1009815CB /* CoreGraphics.framework */; };
-		8ACF9978149176B1009815CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8ACF9976149176B1009815CB /* InfoPlist.strings */; };
 		8ACF997A149176B1009815CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF9979149176B1009815CB /* main.m */; };
 		8ACF997E149176B1009815CB /* VUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF997D149176B1009815CB /* VUAppDelegate.m */; };
 		8ACF9981149176B1009815CB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ACF997F149176B1009815CB /* MainStoryboard.storyboard */; };
 		8ACF9984149176B1009815CB /* VUMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF9983149176B1009815CB /* VUMasterViewController.m */; };
 		8ACF9987149176B1009815CB /* VUDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF9986149176B1009815CB /* VUDetailViewController.m */; };
+		8ACF99981491792B009815CB /* libDTWebArchive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACF99971491792B009815CB /* libDTWebArchive.a */; };
+		8ADE4F80149361550017FC07 /* VUiTunesStoreItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE4F7F149361550017FC07 /* VUiTunesStoreItem.m */; };
+		8ADE4F841493692E0017FC07 /* NSError+StoreGenie.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE4F831493692E0017FC07 /* NSError+StoreGenie.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,17 +25,24 @@
 		8ACF996D149176B1009815CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8ACF996F149176B1009815CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8ACF9971149176B1009815CB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		8ACF9975149176B1009815CB /* StoreGenie-Info.plist */ = {isa = PBXFileReference; path = "StoreGenie-Info.plist"; sourceTree = "<group>"; };
-		8ACF9977149176B1009815CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8ACF9975149176B1009815CB /* StoreGenie-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StoreGenie-Info.plist"; sourceTree = "<group>"; };
 		8ACF9979149176B1009815CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8ACF997B149176B1009815CB /* StoreGenie-Prefix.pch */ = {isa = PBXFileReference; path = "StoreGenie-Prefix.pch"; sourceTree = "<group>"; };
-		8ACF997C149176B1009815CB /* VUAppDelegate.h */ = {isa = PBXFileReference; path = VUAppDelegate.h; sourceTree = "<group>"; };
+		8ACF997B149176B1009815CB /* StoreGenie-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StoreGenie-Prefix.pch"; sourceTree = "<group>"; };
+		8ACF997C149176B1009815CB /* VUAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VUAppDelegate.h; sourceTree = "<group>"; };
 		8ACF997D149176B1009815CB /* VUAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VUAppDelegate.m; sourceTree = "<group>"; };
 		8ACF9980149176B1009815CB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		8ACF9982149176B1009815CB /* VUMasterViewController.h */ = {isa = PBXFileReference; path = VUMasterViewController.h; sourceTree = "<group>"; };
+		8ACF9982149176B1009815CB /* VUMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VUMasterViewController.h; sourceTree = "<group>"; };
 		8ACF9983149176B1009815CB /* VUMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VUMasterViewController.m; sourceTree = "<group>"; };
-		8ACF9985149176B1009815CB /* VUDetailViewController.h */ = {isa = PBXFileReference; path = VUDetailViewController.h; sourceTree = "<group>"; };
+		8ACF9985149176B1009815CB /* VUDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VUDetailViewController.h; sourceTree = "<group>"; };
 		8ACF9986149176B1009815CB /* VUDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VUDetailViewController.m; sourceTree = "<group>"; };
+		8ACF99971491792B009815CB /* libDTWebArchive.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libDTWebArchive.a; sourceTree = "<group>"; };
+		8ACF99991491797E009815CB /* UIPasteboard+DTWebArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPasteboard+DTWebArchive.h"; sourceTree = "<group>"; };
+		8ACF999E14917A68009815CB /* DTWebArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTWebArchive.h; sourceTree = "<group>"; };
+		8ACF999F14917A73009815CB /* DTWebResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTWebResource.h; sourceTree = "<group>"; };
+		8ADE4F7E149361550017FC07 /* VUiTunesStoreItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VUiTunesStoreItem.h; sourceTree = "<group>"; };
+		8ADE4F7F149361550017FC07 /* VUiTunesStoreItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VUiTunesStoreItem.m; sourceTree = "<group>"; };
+		8ADE4F821493692E0017FC07 /* NSError+StoreGenie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+StoreGenie.h"; sourceTree = "<group>"; };
+		8ADE4F831493692E0017FC07 /* NSError+StoreGenie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+StoreGenie.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +53,7 @@
 				8ACF996E149176B1009815CB /* UIKit.framework in Frameworks */,
 				8ACF9970149176B1009815CB /* Foundation.framework in Frameworks */,
 				8ACF9972149176B1009815CB /* CoreGraphics.framework in Frameworks */,
+				8ACF99981491792B009815CB /* libDTWebArchive.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,9 +80,10 @@
 		8ACF996C149176B1009815CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8ACF996D149176B1009815CB /* UIKit.framework */,
-				8ACF996F149176B1009815CB /* Foundation.framework */,
+				8ACF99A014917E93009815CB /* DTWebArchive */,
 				8ACF9971149176B1009815CB /* CoreGraphics.framework */,
+				8ACF996F149176B1009815CB /* Foundation.framework */,
+				8ACF996D149176B1009815CB /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -80,13 +91,17 @@
 		8ACF9973149176B1009815CB /* StoreGenie */ = {
 			isa = PBXGroup;
 			children = (
+				8ACF997F149176B1009815CB /* MainStoryboard.storyboard */,
+				8ADE4F821493692E0017FC07 /* NSError+StoreGenie.h */,
+				8ADE4F831493692E0017FC07 /* NSError+StoreGenie.m */,
 				8ACF997C149176B1009815CB /* VUAppDelegate.h */,
 				8ACF997D149176B1009815CB /* VUAppDelegate.m */,
-				8ACF997F149176B1009815CB /* MainStoryboard.storyboard */,
-				8ACF9982149176B1009815CB /* VUMasterViewController.h */,
-				8ACF9983149176B1009815CB /* VUMasterViewController.m */,
 				8ACF9985149176B1009815CB /* VUDetailViewController.h */,
 				8ACF9986149176B1009815CB /* VUDetailViewController.m */,
+				8ADE4F7E149361550017FC07 /* VUiTunesStoreItem.h */,
+				8ADE4F7F149361550017FC07 /* VUiTunesStoreItem.m */,
+				8ACF9982149176B1009815CB /* VUMasterViewController.h */,
+				8ACF9983149176B1009815CB /* VUMasterViewController.m */,
 				8ACF9974149176B1009815CB /* Supporting Files */,
 			);
 			path = StoreGenie;
@@ -95,12 +110,22 @@
 		8ACF9974149176B1009815CB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8ACF9975149176B1009815CB /* StoreGenie-Info.plist */,
-				8ACF9976149176B1009815CB /* InfoPlist.strings */,
 				8ACF9979149176B1009815CB /* main.m */,
+				8ACF9975149176B1009815CB /* StoreGenie-Info.plist */,
 				8ACF997B149176B1009815CB /* StoreGenie-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8ACF99A014917E93009815CB /* DTWebArchive */ = {
+			isa = PBXGroup;
+			children = (
+				8ACF99971491792B009815CB /* libDTWebArchive.a */,
+				8ACF999E14917A68009815CB /* DTWebArchive.h */,
+				8ACF999F14917A73009815CB /* DTWebResource.h */,
+				8ACF99991491797E009815CB /* UIPasteboard+DTWebArchive.h */,
+			);
+			name = DTWebArchive;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +155,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
-				ORGANIZATIONNAME = "Extessy AG";
+				ORGANIZATIONNAME = Crocodil.us;
 			};
 			buildConfigurationList = 8ACF9963149176B0009815CB /* Build configuration list for PBXProject "StoreGenie" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -154,7 +179,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ACF9978149176B1009815CB /* InfoPlist.strings in Resources */,
 				8ACF9981149176B1009815CB /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,20 +194,14 @@
 				8ACF997E149176B1009815CB /* VUAppDelegate.m in Sources */,
 				8ACF9984149176B1009815CB /* VUMasterViewController.m in Sources */,
 				8ACF9987149176B1009815CB /* VUDetailViewController.m in Sources */,
+				8ADE4F80149361550017FC07 /* VUiTunesStoreItem.m in Sources */,
+				8ADE4F841493692E0017FC07 /* NSError+StoreGenie.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8ACF9976149176B1009815CB /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8ACF9977149176B1009815CB /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		8ACF997F149176B1009815CB /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,6 +234,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -235,6 +254,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -243,9 +263,17 @@
 		8ACF998B149176B1009815CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StoreGenie/StoreGenie-Prefix.pch";
 				INFOPLIST_FILE = "StoreGenie/StoreGenie-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -254,9 +282,17 @@
 		8ACF998C149176B1009815CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StoreGenie/StoreGenie-Prefix.pch";
 				INFOPLIST_FILE = "StoreGenie/StoreGenie-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -281,6 +317,7 @@
 				8ACF998C149176B1009815CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
