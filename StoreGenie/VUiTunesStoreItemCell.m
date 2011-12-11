@@ -29,21 +29,17 @@
 
 #pragma mark -
 
--(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
-        // TODO: Add placeholder image
-        self.iconView = [[EGOImageView alloc] initWithPlaceholderImage:nil];
-        [self.contentView addSubview:self.iconView];
-        
-        self.priceLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-        [self.contentView addSubview:self.priceLabel];
-        
-        self.titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-        self.titleLabel.font = [UIFont boldSystemFontOfSize:14.0];
-        [self.contentView addSubview:self.titleLabel];
-    }
-    return self;
+-(void)awakeFromNib {
+    // TODO: Add placeholder image
+    self.iconView = [[EGOImageView alloc] initWithPlaceholderImage:nil];
+    [self.contentView addSubview:self.iconView];
+    
+    self.priceLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    [self.contentView addSubview:self.priceLabel];
+    
+    self.titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    self.titleLabel.font = [UIFont boldSystemFontOfSize:14.0];
+    [self.contentView addSubview:self.titleLabel];
 }
 
 -(void)layoutSubviews {

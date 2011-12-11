@@ -12,6 +12,14 @@
 		8A2F53B41493D84C007CE851 /* EGOImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F53B21493D84C007CE851 /* EGOImageLoader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8A2F53BB1493DA75007CE851 /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F53BA1493DA75007CE851 /* EGOCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8A2F53BE1493DC34007CE851 /* ThirdPartyLicenses.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8A2F53BD1493DC34007CE851 /* ThirdPartyLicenses.txt */; };
+		8A2F53C314950EAE007CE851 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2F53C214950EAE007CE851 /* Twitter.framework */; };
+		8A2F53CB14951C64007CE851 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A2F53C514951C64007CE851 /* Icon-72.png */; };
+		8A2F53CC14951C64007CE851 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A2F53C614951C64007CE851 /* Icon-Small-50.png */; };
+		8A2F53CD14951C64007CE851 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A2F53C714951C64007CE851 /* Icon-Small.png */; };
+		8A2F53CE14951C64007CE851 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A2F53C814951C64007CE851 /* Icon-Small@2x.png */; };
+		8A2F53CF14951C64007CE851 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A2F53C914951C64007CE851 /* Icon.png */; };
+		8A2F53D014951C64007CE851 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A2F53CA14951C64007CE851 /* Icon@2x.png */; };
+		8A2F53D214951D8D007CE851 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A2F53D114951D8D007CE851 /* Default.png */; };
 		8ACF996E149176B1009815CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACF996D149176B1009815CB /* UIKit.framework */; };
 		8ACF9970149176B1009815CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACF996F149176B1009815CB /* Foundation.framework */; };
 		8ACF9972149176B1009815CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACF9971149176B1009815CB /* CoreGraphics.framework */; };
@@ -36,6 +44,14 @@
 		8A2F53B91493DA75007CE851 /* EGOCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EGOCache.h; path = EGOImageLoading/EGOCache/EGOCache.h; sourceTree = SOURCE_ROOT; };
 		8A2F53BA1493DA75007CE851 /* EGOCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EGOCache.m; path = EGOImageLoading/EGOCache/EGOCache.m; sourceTree = SOURCE_ROOT; };
 		8A2F53BD1493DC34007CE851 /* ThirdPartyLicenses.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ThirdPartyLicenses.txt; sourceTree = "<group>"; };
+		8A2F53C214950EAE007CE851 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		8A2F53C514951C64007CE851 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Icons/Icon-72.png"; sourceTree = SOURCE_ROOT; };
+		8A2F53C614951C64007CE851 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "Icons/Icon-Small-50.png"; sourceTree = SOURCE_ROOT; };
+		8A2F53C714951C64007CE851 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Icons/Icon-Small.png"; sourceTree = SOURCE_ROOT; };
+		8A2F53C814951C64007CE851 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Icons/Icon-Small@2x.png"; sourceTree = SOURCE_ROOT; };
+		8A2F53C914951C64007CE851 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Icons/Icon.png; sourceTree = SOURCE_ROOT; };
+		8A2F53CA14951C64007CE851 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Icons/Icon@2x.png"; sourceTree = SOURCE_ROOT; };
+		8A2F53D114951D8D007CE851 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Icons/Default.png; sourceTree = SOURCE_ROOT; };
 		8ACF9969149176B1009815CB /* StoreGenie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreGenie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ACF996D149176B1009815CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8ACF996F149176B1009815CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -67,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A2F53C314950EAE007CE851 /* Twitter.framework in Frameworks */,
 				8ACF996E149176B1009815CB /* UIKit.framework in Frameworks */,
 				8ACF9970149176B1009815CB /* Foundation.framework in Frameworks */,
 				8ACF9972149176B1009815CB /* CoreGraphics.framework in Frameworks */,
@@ -101,6 +118,20 @@
 			name = EGOImageLoading;
 			sourceTree = "<group>";
 		};
+		8A2F53C414951C49007CE851 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A2F53D114951D8D007CE851 /* Default.png */,
+				8A2F53C514951C64007CE851 /* Icon-72.png */,
+				8A2F53C614951C64007CE851 /* Icon-Small-50.png */,
+				8A2F53C714951C64007CE851 /* Icon-Small.png */,
+				8A2F53C814951C64007CE851 /* Icon-Small@2x.png */,
+				8A2F53C914951C64007CE851 /* Icon.png */,
+				8A2F53CA14951C64007CE851 /* Icon@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		8ACF995E149176B0009815CB = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +155,7 @@
 				8ACF99A014917E93009815CB /* DTWebArchive */,
 				8ACF9971149176B1009815CB /* CoreGraphics.framework */,
 				8ACF996F149176B1009815CB /* Foundation.framework */,
+				8A2F53C214950EAE007CE851 /* Twitter.framework */,
 				8ACF996D149176B1009815CB /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -145,6 +177,7 @@
 				8ADE4F8A1493CEAA0017FC07 /* VUiTunesStoreItemCell.m */,
 				8ACF9982149176B1009815CB /* VUMasterViewController.h */,
 				8ACF9983149176B1009815CB /* VUMasterViewController.m */,
+				8A2F53C414951C49007CE851 /* Resources */,
 				8ACF9974149176B1009815CB /* Supporting Files */,
 				8A2F53AA1493D80B007CE851 /* Third Party */,
 			);
@@ -182,6 +215,7 @@
 				8ACF9965149176B1009815CB /* Sources */,
 				8ACF9966149176B1009815CB /* Frameworks */,
 				8ACF9967149176B1009815CB /* Resources */,
+				8A2F53BF14950303007CE851 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -225,10 +259,33 @@
 			files = (
 				8ACF9981149176B1009815CB /* MainStoryboard.storyboard in Resources */,
 				8A2F53BE1493DC34007CE851 /* ThirdPartyLicenses.txt in Resources */,
+				8A2F53CB14951C64007CE851 /* Icon-72.png in Resources */,
+				8A2F53CC14951C64007CE851 /* Icon-Small-50.png in Resources */,
+				8A2F53CD14951C64007CE851 /* Icon-Small.png in Resources */,
+				8A2F53CE14951C64007CE851 /* Icon-Small@2x.png in Resources */,
+				8A2F53CF14951C64007CE851 /* Icon.png in Resources */,
+				8A2F53D014951C64007CE851 /* Icon@2x.png in Resources */,
+				8A2F53D214951D8D007CE851 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A2F53BF14950303007CE851 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" \\) -print0 | \\\nxargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | \\\nperl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8ACF9965149176B1009815CB /* Sources */ = {

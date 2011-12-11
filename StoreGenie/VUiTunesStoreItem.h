@@ -36,6 +36,7 @@ typedef enum {
 
 +(void)fetchItemFromPasteboard:(UIPasteboard*)pasteboard toContainer:(id<VUiTunesStoreItemContainer>)container;
 +(void)fetchItemWithId:(NSString*)itemId toContainer:(id<VUiTunesStoreItemContainer>)container;
++(void)fetchItemWithStoreURL:(NSURL*)storeURL toContainer:(id<VUiTunesStoreItemContainer>)container;
 
 -(id)initWithData:(NSData*)dataFromStore error:(NSError**)error;
 

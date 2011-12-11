@@ -9,6 +9,8 @@
 #import "VUAppDelegate.h"
 #import "VUiTunesStoreItem.h"
 
+static NSString* kCustomURLScheme = @"storegenie";
+
 @implementation VUAppDelegate
 
 @dynamic masterViewController;
@@ -17,13 +19,20 @@
 #pragma mark -
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
+#if TARGET_IPHONE_SIMULATOR
+    // Add a fixed item for "Tetris"
     [VUiTunesStoreItem fetchItemWithId:@"479943969" toContainer:self.masterViewController];
-    return;
-    
+#else
     UIPasteboard* pasteboard = [UIPasteboard generalPasteboard];
     [VUiTunesStoreItem fetchItemFromPasteboard:pasteboard toContainer:self.masterViewController];
-    
-    // TODO: Provide details, link to App Store and App Shopper as well as Sharing options in detail
+#endif
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication 
+         annotation:(id)annotation {
+    url = [NSURL URLWithString:[[url absoluteString] stringByReplacingOccurrencesOfString:kCustomURLScheme withString:@"http"]];
+    [VUiTunesStoreItem fetchItemWithStoreURL:url toContainer:self.masterViewController];
+    return YES;
 }
 
 - (VUMasterViewController*)masterViewController {

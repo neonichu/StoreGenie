@@ -10,6 +10,8 @@
 
 #import "VUiTunesStoreItem.h"
 
-@interface VUMasterViewController : UITableViewController <VUiTunesStoreItemContainer>
+@interface VUMasterViewController : UITableViewController <UIActionSheetDelegate, VUiTunesStoreItemContainer>
+
+-(IBAction)settingsTapped:(UIBarButtonItem*)button;
 
 @end

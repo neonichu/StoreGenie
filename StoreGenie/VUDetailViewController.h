@@ -10,9 +10,11 @@
 
 #import "VUiTunesStoreItem.h"
 
-@interface VUDetailViewController : UIViewController
+@interface VUDetailViewController : UIViewController <UIActionSheetDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel* detailDescriptionLabel;
 @property (strong, nonatomic) VUiTunesStoreItem* detailItem;
+
+-(IBAction)actionTapped:(UIBarButtonItem*)button;
 
 @end

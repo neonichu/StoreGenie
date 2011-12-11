@@ -12,6 +12,8 @@
 #import "VUiTunesStoreItem.h"
 
 static NSString* kiTunesDataURL = @"http://ax.phobos.apple.com.edgesuite.net/WebObjects/MZStoreServices.woa/wa/wsLookup?id=%@";
+static NSString* kURLFragment = @"href=\"http://itunes.apple.com/";
+static NSUInteger kURLLength = 6;
 
 static NSString* kArtworkUrlSmall   = @"artworkUrl60";
 static NSString* kItemId            = @"trackId";
@@ -53,15 +55,30 @@ static NSString* kViewUrl           = @"trackViewUrl";
     }
     
     NSString* htmlString = [[NSString alloc] initWithData:webArchive.mainResource.data encoding:NSUTF8StringEncoding];
-    NSRange iTunesLinkLocation = [htmlString rangeOfString:@"label=\"View In iTunes\""];
-    htmlString = [htmlString substringWithRange:NSMakeRange(iTunesLinkLocation.location, 100)];
-    iTunesLinkLocation = [htmlString rangeOfString:@"http://"];
-    NSRange end = [htmlString rangeOfString:@"\"" options:0 
-                                      range:NSMakeRange(iTunesLinkLocation.location, htmlString.length - iTunesLinkLocation.location)];
-    htmlString = [htmlString substringWithRange:NSMakeRange(iTunesLinkLocation.location, end.location - iTunesLinkLocation.location)];
     
-    // TODO: Get ID from HTML and download data
-    NSLog(@"htmlString: %@", htmlString);
+    NSRange iTunesLinkLocation = [htmlString rangeOfString:kURLFragment];
+    if (iTunesLinkLocation.location == NSNotFound) return;
+    
+    NSRange end = [htmlString rangeOfString:@"\"" options:0 range:NSMakeRange(iTunesLinkLocation.location + kURLLength, htmlString.length -
+                                                                              iTunesLinkLocation.location - kURLLength)];
+    if (end.location == NSNotFound) return;
+    
+    NSInteger start = iTunesLinkLocation.location + kURLLength;
+    htmlString = [htmlString substringWithRange:NSMakeRange(start, end.location - start)];
+    
+    [self fetchItemWithStoreURL:[NSURL URLWithString:htmlString] toContainer:container];
+}
+
++(void)fetchItemWithStoreURL:(NSURL*)storeURL toContainer:(id<VUiTunesStoreItemContainer>)container {
+    NSString* urlString = [storeURL absoluteString];
+    NSRange iTunesLinkLocation = [urlString rangeOfString:@"id"];
+    if (iTunesLinkLocation.location == NSNotFound) return;
+    NSRange end = [urlString rangeOfString:@"?"];
+    if (iTunesLinkLocation.location == NSNotFound) return;
+    urlString = [urlString substringWithRange:NSMakeRange(iTunesLinkLocation.location + 2, 
+                                                            end.location - iTunesLinkLocation.location - 2)];
+    
+    [self fetchItemWithId:urlString toContainer:container];
 }
 
 +(void)fetchItemWithId:(NSString*)itemId toContainer:(id<VUiTunesStoreItemContainer>)container {
